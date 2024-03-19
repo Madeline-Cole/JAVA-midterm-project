@@ -1,7 +1,6 @@
 // Imports scanner.
 import java.util.Scanner;
 
-
 /**
  * Class description.
  * @author Madeline Cole
@@ -21,9 +20,6 @@ public class BandOfTheHour {
     private static final double MIN_WEIGHT = 45.0;
     // Max Weight Per Row.
     private static final double MAX_WEIGHT_PER_POSITION = 100.0;
-
-
-
 
     /**
      Method description.
@@ -49,11 +45,9 @@ public class BandOfTheHour {
         // Creates a variable that holds the max positions for each row.
         int maxPositionsInRow = 0;
 
-
         // Prints title of program.
         System.out.println("Welcome to the Band of the Hour");
         System.out.println("--------------------------------");
-
 
         // Prompt the user to enter the number of rows and stores it into numRows.
         System.out.print("Please enter number of rows              : ");
@@ -65,8 +59,7 @@ public class BandOfTheHour {
             // Prompts the user for a valid input until one is given.
             System.out.print("ERROR: Out of range, try again           : ");
             numRows = keyboard.nextInt();
-        }
-
+        } // End of while loop.
 
         // Loop through each row.
         for (int i = 0; i < numRows; i++) {
@@ -90,7 +83,6 @@ public class BandOfTheHour {
             // Initialize the positions in the row.
             positions[i] = new double[numPositions];
         } // End of for loop.
-
 
         /**
          * This is the main loop of the program.
